@@ -72,8 +72,8 @@
     "sinon": "17.0.1",
     "ts-node": "10.9.2",
     "typescript": "5.3.3",
-    "rimraf": "^4.0.0"  // Add this line
-  }
+    "rimraf": "^4.0.0"
+  },
   "engines": {
     "node": ">= 14.0.0"
   }
