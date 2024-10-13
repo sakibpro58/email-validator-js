@@ -32,7 +32,7 @@
     "lint-fix": "yarn lint -- --fix",
     "mocha": "nyc mocha --report lcovonly -- __tests__/*-test.ts",
     "prepare": "yarn husky install",
-    "prepublishOnly": "yarn build",
+    "prepublishOnly": "npm run build",
     "prettier": "prettier --write \"src/**/*.{ts,json}\" \"__tests__/**/*.{ts,json}\"",
     "test": "TS_NODE_TRANSPILE_ONLY=1 TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha",
     "test-ci": "TS_NODE_TRANSPILE_ONLY=1 TS_NODE_COMPILER_OPTIONS='{\"module\":\"commonjs\"}' mocha"
@@ -72,7 +72,7 @@
     "sinon": "17.0.1",
     "ts-node": "10.9.2",
     "typescript": "5.3.3",
-    "rimraf": "^5.0.0"
+    "rimraf": "^4.0.0"  // Add this line
   },
   "engines": {
     "node": ">= 14.0.0"
